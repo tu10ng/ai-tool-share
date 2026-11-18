@@ -112,6 +112,23 @@ section .flow .script::after {
 }
 section .flow .note { margin-left: 16px; padding-left: 1em; border-left: 2px solid #e7e2ed; color: #686270; font-size: .9em; }
 
+/* 树形图（内嵌 svg）：.ai 是 AI 走的路，.hit 是我们实际的问题 */
+section svg.tree { display: block; margin-top: .4em; overflow: visible; }
+section svg.tree rect { fill: #fff; stroke: #d6cde0; stroke-width: 1.5; }
+section svg.tree path { fill: none; stroke: #d6cde0; stroke-width: 2; }
+section svg.tree marker path { fill: #8044ab; stroke: none; }
+section svg.tree text { fill: #24212b; font-size: 22px; text-anchor: middle; dominant-baseline: central; }
+section svg.tree .small text { font-size: 18px; }
+section svg.tree .ai rect { fill: url(#tree-ai); stroke: none; }
+section svg.tree .ai text { fill: #fbfaff; }
+section svg.tree path.ai { stroke: #8044ab; stroke-width: 3; marker-end: url(#tree-arrow); }
+section svg.tree path.more { stroke-dasharray: 6 6; marker-end: none; }
+section svg.tree .hit rect { stroke: #b3334c; stroke-width: 2.5; }
+section svg.tree .hit text { fill: #b3334c; font-weight: 700; }
+section svg.tree .note { text-anchor: start; }
+section svg.tree .ai-note { fill: #8044ab; }
+section svg.tree .hit-note { fill: #b3334c; }
+
 section a { color: #8550ad; }
 section img { border-radius: 8px; }
 section::after { color: #928998; font-size: 14px; }

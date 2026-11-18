@@ -18,15 +18,32 @@ title: AI 工具的使用分享
 
 # AI：执行力极强的新同事
 
-## 想到一条合理的路，就深度优先做下去
-
-- 又快又不累
-
-## 但它的先验来自业界
-
-- 我们的问题常常是特定问题，在它的候选里排第三、第四
-- 前两三条常见的路各走一遍，才摸得到我们的分支：耗时
-- 一旦跑偏，不一定退得回第三、四条分支
+<svg class="tree" viewBox="0 0 1160 500" width="1160" height="500">
+<defs>
+<linearGradient id="tree-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="tree-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+</defs>
+<path class="ai" d="M190 270C240 270 240 110 288 110"/><path d="M190 270H290"/><path d="M190 270C240 270 240 430 290 430"/>
+<path class="ai" d="M520 110C565 110 565 60 608 60"/><path d="M520 110C565 110 565 160 610 160"/>
+<path d="M520 270C565 270 565 235 610 235"/><path d="M520 270C565 270 565 305 610 305"/>
+<path d="M520 430C565 430 565 395 610 395"/><path d="M520 430C565 430 565 465 610 465"/>
+<path class="ai" d="M740 60C785 60 785 25 828 25"/><path d="M740 60C785 60 785 95 830 95"/>
+<path class="ai more" d="M960 25H1010"/><text class="ai-note" x="1020" y="25" text-anchor="start">…</text>
+<g><rect x="0" y="242" width="190" height="56" rx="8"/><text x="95" y="270">遇到问题</text></g>
+<g class="ai"><rect x="290" y="82" width="230" height="56" rx="8"/><text x="405" y="110">① 业界最常见</text></g>
+<g><rect x="290" y="242" width="230" height="56" rx="8"/><text x="405" y="270">② 次常见</text></g>
+<g class="hit"><rect x="290" y="402" width="230" height="56" rx="8"/><text x="405" y="430">③ 我们实际的问题</text></g>
+<g class="ai small"><rect x="610" y="38" width="130" height="44" rx="8"/><text x="675" y="60">第一条</text></g>
+<g class="small"><rect x="610" y="138" width="130" height="44" rx="8"/></g>
+<g class="small"><rect x="610" y="213" width="130" height="44" rx="8"/></g>
+<g class="small"><rect x="610" y="283" width="130" height="44" rx="8"/></g>
+<g class="small"><rect x="610" y="373" width="130" height="44" rx="8"/></g>
+<g class="small"><rect x="610" y="443" width="130" height="44" rx="8"/></g>
+<g class="ai small"><rect x="830" y="3" width="130" height="44" rx="8"/><text x="895" y="25">第一条</text></g>
+<g class="small"><rect x="830" y="73" width="130" height="44" rx="8"/></g>
+<text class="note ai-note" x="810" y="170">没有上下文规定时，</text><text class="note ai-note" x="810" y="204">AI 永远走第一条</text>
+<text class="note hit-note" x="810" y="414">我们实际的问题</text><text class="note hit-note" x="810" y="448">在第三条</text>
+</svg>
 
 ---
 
