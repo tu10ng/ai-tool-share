@@ -87,10 +87,10 @@ title: AI 工具的使用分享
 <path class="bracket" d="M540 100V92H860V100"/><text class="label ai-note" x="700" y="68">能替换成 AI</text>
 <path class="bracket" d="M900 100V92H1060V100"/><text class="label human-note" x="980" y="68">要人决策</text>
 <path class="flow" d="M140 182H178"/><path class="flow" d="M320 182H358"/><path class="flow" d="M500 182H538"/><path class="flow" d="M680 182H718"/><path class="flow" d="M860 182H898"/><path class="flow" d="M1060 182H1098"/><text x="1128" y="182">合入</text>
-<path class="flow" d="M980 238C980 320 430 320 430 216"/><text class="label" x="705" y="322">打回</text>
+<path class="flow" d="M980 238C980 320 250 320 250 216"/><text class="label" x="615" y="322">打回</text>
 <g class="ai"><rect x="0" y="150" width="140" height="64" rx="8"/><text x="70" y="182">代码拉取</text></g>
-<g class="doing"><rect x="180" y="150" width="140" height="64" rx="8"/><text x="250" y="182">代码串讲</text></g>
-<g class="doing"><rect x="360" y="150" width="140" height="64" rx="8"/><text x="430" y="182">修改代码</text></g>
+<g class="doing"><rect x="180" y="150" width="140" height="64" rx="8"/><text x="250" y="182">修改代码</text></g>
+<a href="https://github.com/tu10ng/ai-tool-share/blob/main/skills/lwd-code-walkthrough/SKILL.md" target="_blank"><g class="doing"><rect x="360" y="150" width="140" height="64" rx="8"/><text x="430" y="182">代码串讲 ↗</text></g></a>
 <g class="ai"><rect x="540" y="150" width="140" height="64" rx="8"/><text x="610" y="182">代码提交</text></g>
 <g class="ai"><rect x="720" y="150" width="140" height="64" rx="8"/><text x="790" y="182">gh 提 PR</text></g>
 <g class="human"><polygon points="980,126 1060,182 980,238 900,182"/><text x="980" y="182">代码检视</text></g>
