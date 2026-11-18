@@ -112,22 +112,32 @@ section .flow .script::after {
 }
 section .flow .note { margin-left: 16px; padding-left: 1em; border-left: 2px solid #e7e2ed; color: #686270; font-size: .9em; }
 
-/* 树形图（内嵌 svg）：.ai 是 AI 走的路，.hit 是我们实际的问题 */
-section svg.tree { display: block; margin-top: .4em; overflow: visible; }
-section svg.tree rect { fill: #fff; stroke: #d6cde0; stroke-width: 1.5; }
-section svg.tree path { fill: none; stroke: #d6cde0; stroke-width: 2; }
-section svg.tree marker path { fill: #8044ab; stroke: none; }
-section svg.tree text { fill: #24212b; font-size: 22px; text-anchor: middle; dominant-baseline: central; }
-section svg.tree .small text { font-size: 18px; }
-section svg.tree .ai rect { fill: url(#tree-ai); stroke: none; }
-section svg.tree .ai text { fill: #fbfaff; }
-section svg.tree path.ai { stroke: #8044ab; stroke-width: 3; marker-end: url(#tree-arrow); }
-section svg.tree path.more { stroke-dasharray: 6 6; marker-end: none; }
-section svg.tree .hit rect { stroke: #b3334c; stroke-width: 2.5; }
-section svg.tree .hit text { fill: #b3334c; font-weight: 700; }
-section svg.tree .note { text-anchor: start; }
-section svg.tree .ai-note { fill: #8044ab; }
-section svg.tree .hit-note { fill: #b3334c; }
+/* 内嵌 svg 图：.ai 是交给 AI 的，.doing 是正在交的，.human 是留给人的决策，.hit 是我们实际的问题。
+   每个 svg 自带 #diagram-ai 渐变和箭头 marker */
+section svg.diagram { display: block; margin-top: .4em; overflow: visible; }
+section svg.diagram rect, section svg.diagram polygon { fill: #fff; stroke: #d6cde0; stroke-width: 1.5; }
+section svg.diagram path { fill: none; stroke: #d6cde0; stroke-width: 2; }
+section svg.diagram marker path { fill: #8044ab; stroke: none; }
+section svg.diagram #diagram-flow path { fill: #bea0d9; }
+section svg.diagram text { fill: #24212b; font-size: 22px; text-anchor: middle; dominant-baseline: central; }
+section svg.diagram .small text { font-size: 18px; }
+section svg.diagram .ai rect { fill: url(#diagram-ai); stroke: none; }
+section svg.diagram .ai text { fill: #fbfaff; }
+section svg.diagram path.ai { stroke: #8044ab; stroke-width: 3; marker-end: url(#diagram-arrow); }
+section svg.diagram path.flow { stroke: #bea0d9; marker-end: url(#diagram-flow); }
+section svg.diagram path.more { stroke-dasharray: 6 6; marker-end: none; }
+section svg.diagram path.bracket { stroke: #c3a4e1; stroke-width: 1.5; }
+section svg.diagram .doing rect { fill: #f3ecfa; stroke: #aa7ecf; stroke-width: 2; stroke-dasharray: 6 4; }
+section svg.diagram .doing text { fill: #8044ab; }
+section svg.diagram .human polygon { stroke: #686270; stroke-width: 2; }
+section svg.diagram .hit rect { stroke: #b3334c; stroke-width: 2.5; }
+section svg.diagram .hit text { fill: #b3334c; font-weight: 700; }
+section svg.diagram .label { fill: #686270; font-size: 20px; }
+section svg.diagram .note { text-anchor: start; }
+section svg.diagram .caption { font-size: 26px; }
+section svg.diagram .ai-note { fill: #8044ab; }
+section svg.diagram .hit-note { fill: #b3334c; }
+section svg.diagram .human-note { fill: #24212b; font-weight: 700; }
 
 section a { color: #8550ad; }
 section img { border-radius: 8px; }

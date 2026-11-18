@@ -18,10 +18,10 @@ title: AI 工具的使用分享
 
 # AI：执行力极强的新同事
 
-<svg class="tree" viewBox="0 0 1160 500" width="1160" height="500">
+<svg class="diagram" viewBox="0 0 1160 500" width="1160" height="500">
 <defs>
-<linearGradient id="tree-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
-<marker id="tree-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="diagram-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
 </defs>
 <path class="ai" d="M190 270C240 270 240 110 288 110"/><path d="M190 270H290"/><path d="M190 270C240 270 240 430 290 430"/>
 <path class="ai" d="M520 110C565 110 565 60 608 60"/><path d="M520 110C565 110 565 160 610 160"/>
@@ -47,9 +47,29 @@ title: AI 工具的使用分享
 
 ---
 
-# 需求 → 方案 → 过程，层层一对多
+# 逐步把任务流程节点交给 AI
 
-【图：工作树上的 lwd】
+<svg class="diagram" viewBox="0 0 1160 545" width="1160" height="545">
+<defs>
+<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+</defs>
+<g transform="translate(60 0)">
+<path class="bracket" d="M0 112V104H350V112"/><text class="label ai-note" x="175" y="80">已交给 AI</text>
+<path class="bracket" d="M400 112V104H550V112"/><text class="label ai-note" x="475" y="80">正在交</text>
+<path class="bracket" d="M810 112V104H960V112"/><text class="label" x="885" y="80">还没交</text>
+<path class="flow" d="M150 182H198"/><path class="flow" d="M350 182H398"/><path class="flow" d="M550 182H594"/><path class="flow" d="M744 182H808"/><path class="flow" d="M960 182H1000"/><text x="1022" y="182">…</text>
+<path class="flow" d="M670 236C670 330 730 380 809 380"/><path class="flow" d="M959 380H1000"/><text x="1022" y="380">…</text>
+<g class="ai"><rect x="0" y="150" width="150" height="64" rx="8"/><text x="75" y="182">执行</text></g>
+<g class="ai"><rect x="200" y="150" width="150" height="64" rx="8"/><text x="275" y="182">执行</text></g>
+<g class="doing"><rect x="400" y="150" width="150" height="64" rx="8"/><text x="475" y="182">执行</text></g>
+<g class="human"><polygon points="670,128 744,182 670,236 596,182"/><text x="670" y="182">决策</text></g>
+<g><rect x="810" y="150" width="150" height="64" rx="8"/><text x="885" y="182">执行</text></g>
+<g class="human"><polygon points="885,326 959,380 885,434 811,380"/><text x="885" y="380">决策</text></g>
+<path class="bracket" d="M596 112V104H744V112"/><text class="label human-note" x="670" y="80">留给人</text><text class="label human-note" x="885" y="462">留给人</text>
+<text class="caption" x="520" y="520">执行节点一个个<tspan class="ai-note">交给 AI</tspan>，决策节点<tspan class="human-note">留给人</tspan></text>
+</g>
+</svg>
 
 ---
 
