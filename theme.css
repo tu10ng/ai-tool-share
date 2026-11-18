@@ -112,7 +112,8 @@ section .flow .script::after {
 }
 section .flow .note { margin-left: 16px; padding-left: 1em; border-left: 2px solid #e7e2ed; color: #686270; font-size: .9em; }
 
-/* 内嵌 svg 图：.ai 是交给 AI 的，.doing 是正在交的，.human 是留给人的决策，.hit 是我们实际的问题。
+/* 内嵌 svg 图：.ai 是交给 AI 的，.doing 是 AI 做但还离不开人的（正在交、要人给上下文），
+   .human 是留给人的决策，.hit 是我们实际的问题。
    每个 svg 自带 #diagram-ai 渐变和箭头 marker */
 section svg.diagram { display: block; margin-top: .4em; overflow: visible; }
 section svg.diagram rect, section svg.diagram polygon { fill: #fff; stroke: #d6cde0; stroke-width: 1.5; }

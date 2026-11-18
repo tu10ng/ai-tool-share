@@ -73,20 +73,28 @@ title: AI 工具的使用分享
 
 ---
 
-# 编程 Agent: 能交出去什么
+# 编程 Agent: 哪些能替换成 AI
 
 把编码交给 AI：上下文影响智力，提示词影响方向；决策留给人。
 
-## 一句话就交出去
-
-- claude code 跑在 vscode 里，模型走公司 api
-- 串讲代码、总结项目理解
-- 帮忙配置 github，寻找工具的配置位置
-
-## 可我很快发现
-
-- 业界通用的事，一句话就做对
-- 一碰我们自己的代码，就要来回好几轮
+<svg class="diagram" viewBox="0 0 1160 350" width="1160" height="350">
+<defs>
+<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+</defs>
+<path class="bracket" d="M0 100V92H140V100"/><text class="label ai-note" x="70" y="68">能替换成 AI</text>
+<path class="bracket" d="M180 100V92H500V100"/><text class="label ai-note" x="340" y="68">一次做不对，要人给上下文</text>
+<path class="bracket" d="M540 100V92H860V100"/><text class="label ai-note" x="700" y="68">能替换成 AI</text>
+<path class="bracket" d="M900 100V92H1060V100"/><text class="label human-note" x="980" y="68">要人决策</text>
+<path class="flow" d="M140 182H178"/><path class="flow" d="M320 182H358"/><path class="flow" d="M500 182H538"/><path class="flow" d="M680 182H718"/><path class="flow" d="M860 182H898"/><path class="flow" d="M1060 182H1098"/><text x="1128" y="182">合入</text>
+<path class="flow" d="M980 238C980 320 430 320 430 216"/><text class="label" x="705" y="322">打回</text>
+<g class="ai"><rect x="0" y="150" width="140" height="64" rx="8"/><text x="70" y="182">代码拉取</text></g>
+<g class="doing"><rect x="180" y="150" width="140" height="64" rx="8"/><text x="250" y="182">代码串讲</text></g>
+<g class="doing"><rect x="360" y="150" width="140" height="64" rx="8"/><text x="430" y="182">修改代码</text></g>
+<g class="ai"><rect x="540" y="150" width="140" height="64" rx="8"/><text x="610" y="182">代码提交</text></g>
+<g class="ai"><rect x="720" y="150" width="140" height="64" rx="8"/><text x="790" y="182">gh 提 PR</text></g>
+<g class="human"><polygon points="980,126 1060,182 980,238 900,182"/><text x="980" y="182">代码检视</text></g>
+</svg>
 
 ---
 
