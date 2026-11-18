@@ -7,16 +7,12 @@ title: AI 工具的使用分享
 
 # 从打通 aisbench 测试说起
 
-## 一步一步交出去
-
-- 手动跑 aisbench，手动从输出里抠数据
-- agent 写一个独立的 py 提取数据
-- py 整合到测试脚本末尾，跑完直接出数
-- 稳定之后，整个 aisbench 交给 agent 跑
-
-## 每往前一步
-
-- 一句话能交出去的就长一截
+<div class="flow">
+<span class="step">①</span><span class="node">运行 aisbench<small>人</small></span><span class="arrow">→</span><span class="node">提取数据<small>人手动抠</small></span><span class="note">起点：全手动</span>
+<span class="step">②</span><span class="node">运行 aisbench<small>人</small></span><span class="arrow">→</span><span class="node ai">提取数据<small>独立 py，人来跑</small></span><span class="note">agent 写独立 py，替换<strong>提取数据</strong></span>
+<span class="step">③</span><span class="node script">运行 aisbench<small>人</small></span><span class="arrow">→</span><span class="node ai">提取数据<small>脚本末尾自动跑</small></span><span class="note">agent 把 py 整合到测试脚本末尾，替换<strong>人来跑 py</strong></span>
+<span class="step">④</span><span class="node ai script">运行 aisbench<small>agent</small></span><span class="arrow">→</span><span class="node ai">提取数据<small>脚本末尾自动跑</small></span><span class="note">稳定后交给 agent，替换<strong>运行 aisbench</strong></span>
+</div>
 
 ---
 
@@ -252,6 +248,7 @@ title: AI 工具的使用分享
 - 哪条走到哪、哪条停在分叉上等我，要一眼看到
 - 在几条线之间来回切，人的上下文也成了瓶颈
 - 管道多了，用 todo 工作树当 dashboard
+- worktree、隔离
 
 ## 要不要开发专门的软件？
 

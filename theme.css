@@ -61,6 +61,57 @@ section pre {
   padding: .4em .6em;
 }
 
+/* 流程图：一行一条流程；.ai 是交给 agent 的节点，.script 把它和右边的节点框成同一个测试脚本 */
+section .flow {
+  --node: 230px;
+  --arrow: 56px;
+  --gap: 16px;
+  display: grid;
+  grid-template-columns: 1.6em var(--node) var(--arrow) var(--node) 1fr;
+  align-items: center;
+  gap: 40px var(--gap);
+  margin-top: 1.4em;
+  font-size: .82em;
+  line-height: 1.35;
+}
+section .flow .step { color: #aa7ecf; font-weight: 700; }
+section .flow .arrow { color: #bea0d9; text-align: center; }
+section .flow .node {
+  position: relative;
+  padding: .45em .6em;
+  border: 1.5px solid #d6cde0;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+section .flow .node small { display: block; font-size: .7em; color: #928998; }
+section .flow .ai {
+  border-color: transparent;
+  color: #fbfaff;
+  background: linear-gradient(112deg, rgba(92, 49, 151, .94), rgba(128, 68, 171, .9) 52%, rgba(87, 100, 162, .88));
+}
+section .flow .ai small { color: #e4d9f2; }
+section .flow .script::before {
+  content: "";
+  position: absolute;
+  inset: -12px auto -12px -12px;
+  width: calc(2 * var(--node) + var(--arrow) + 2 * var(--gap) + 24px);
+  border: 1.5px dashed #c3a4e1;
+  border-radius: 12px;
+}
+section .flow .script::after {
+  content: "测试脚本";
+  position: absolute;
+  top: calc(-12px - .5em);
+  left: 0;
+  padding: 0 .3em;
+  font-size: .6em;
+  line-height: 1;
+  color: #8550ad;
+  background: #fff;
+}
+section .flow .note { margin-left: 16px; padding-left: 1em; border-left: 2px solid #e7e2ed; color: #686270; font-size: .9em; }
+
 section a { color: #8550ad; }
 section img { border-radius: 8px; }
 section::after { color: #928998; font-size: 14px; }
