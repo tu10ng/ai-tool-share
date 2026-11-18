@@ -100,17 +100,32 @@ title: AI 工具的使用分享
 
 # 编程 Agent: 上下文影响智力
 
-## 现场：让它串讲一段我们的代码
-
-- 讲得很流畅，但有几处照业界常见的实现讲
-- 缺了我们的上下文，就拿业界先验补上：**幻觉**
-- 【例子】
-
-## 上下文也不是越多越好
-
-- 越满越笨，会话一断状态就丢
-- plan 写进文件，探路交给 subagent
-- 只留这一步要用的：省 token 就是提高智力
+<svg class="diagram" viewBox="0 0 1160 550" width="1160" height="550">
+<defs>
+<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="diagram-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+</defs>
+<text class="note" x="0" y="40">上下文用到 50%</text>
+<rect x="190" y="18" width="360" height="44" rx="6"/><g class="ai"><rect x="190" y="18" width="180" height="44" rx="6"/></g>
+<path class="flow" d="M560 40H598"/><g><rect x="610" y="12" width="180" height="56" rx="8"/><text x="700" y="40">问同一个问题</text></g><path class="flow" d="M800 40H838"/><text class="note hit-note result" x="850" y="40">✗ 可能说错</text>
+<path class="ai more-arrow" d="M280 68V142"/><text class="note ai-note" x="296" y="105">压缩上下文</text>
+<text class="note" x="0" y="170">压缩之后</text>
+<rect x="190" y="148" width="360" height="44" rx="6"/><g class="ai"><rect x="190" y="148" width="44" height="44" rx="6"/></g>
+<path class="flow" d="M560 170H598"/><g><rect x="610" y="142" width="180" height="56" rx="8"/><text x="700" y="170">问同一个问题</text></g><path class="flow" d="M800 170H838"/><text class="note ai-note result" x="850" y="170">✓ 分析正确</text>
+<text class="label note" x="0" y="430">每轮发给 api</text><text class="label note" x="0" y="460">的上下文</text>
+<g class="ai"><rect x="190" y="493" width="48" height="22" rx="3"/></g><text class="label small-label" x="214" y="534">第1轮</text>
+<g class="old"><rect x="266" y="493" width="48" height="22" rx="3"/></g><g class="ai"><rect x="266" y="468" width="48" height="22" rx="3"/></g><text class="label small-label" x="290" y="534">第2轮</text>
+<g class="old"><rect x="342" y="493" width="48" height="22" rx="3"/></g><g class="old"><rect x="342" y="468" width="48" height="22" rx="3"/></g><g class="ai"><rect x="342" y="443" width="48" height="22" rx="3"/></g><text class="label small-label" x="366" y="534">第3轮</text>
+<g class="old"><rect x="418" y="493" width="48" height="22" rx="3"/></g><g class="old"><rect x="418" y="468" width="48" height="22" rx="3"/></g><g class="old"><rect x="418" y="443" width="48" height="22" rx="3"/></g><g class="ai"><rect x="418" y="418" width="48" height="22" rx="3"/></g><text class="label small-label" x="442" y="534">第4轮</text>
+<g class="old"><rect x="494" y="493" width="48" height="22" rx="3"/></g><g class="old"><rect x="494" y="468" width="48" height="22" rx="3"/></g><g class="old"><rect x="494" y="443" width="48" height="22" rx="3"/></g><g class="old"><rect x="494" y="418" width="48" height="22" rx="3"/></g><g class="ai"><rect x="494" y="393" width="48" height="22" rx="3"/></g><text class="label small-label" x="518" y="534">第5轮</text>
+<g class="old"><rect x="570" y="493" width="48" height="22" rx="3"/></g><g class="old"><rect x="570" y="468" width="48" height="22" rx="3"/></g><g class="old"><rect x="570" y="443" width="48" height="22" rx="3"/></g><g class="old"><rect x="570" y="418" width="48" height="22" rx="3"/></g><g class="old"><rect x="570" y="393" width="48" height="22" rx="3"/></g><g class="ai"><rect x="570" y="368" width="48" height="22" rx="3"/></g><text class="label small-label" x="594" y="534">第6轮</text>
+<g class="old"><rect x="646" y="493" width="48" height="22" rx="3"/></g><g class="old"><rect x="646" y="468" width="48" height="22" rx="3"/></g><g class="old"><rect x="646" y="443" width="48" height="22" rx="3"/></g><g class="old"><rect x="646" y="418" width="48" height="22" rx="3"/></g><g class="old"><rect x="646" y="393" width="48" height="22" rx="3"/></g><g class="old"><rect x="646" y="368" width="48" height="22" rx="3"/></g><g class="ai"><rect x="646" y="343" width="48" height="22" rx="3"/></g><text class="label small-label" x="670" y="534">第7轮</text>
+<text class="note" x="760" y="360">每一轮都把整个上下文发给 api</text>
+<text class="note hit-note" x="760" y="400">decode 线性变慢，更花钱</text>
+<g class="ai"><rect x="760" y="440" width="340" height="56" rx="8"/><text x="930" y="468">尽量用 subagent + spec plan</text></g>
+<text class="label small-label note" x="760" y="534">紫色是这一轮新增的，灰色是之前的又发一遍</text>
+</svg>
 
 ---
 

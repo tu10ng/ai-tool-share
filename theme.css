@@ -140,6 +140,10 @@ section svg.diagram .ai-note { fill: #8044ab; }
 section svg.diagram .hit-note { fill: #b3334c; }
 section svg.diagram .human-note { fill: #24212b; font-weight: 700; }
 section svg.diagram a text { text-decoration: underline; }
+section svg.diagram .old rect { fill: #ece8f1; stroke: none; }
+section svg.diagram .small-label { font-size: 16px; }
+section svg.diagram .result { font-size: 24px; font-weight: 700; }
+section svg.diagram path.more-arrow { stroke-dasharray: 6 6; }
 
 section a { color: #8550ad; }
 section img { border-radius: 8px; }
