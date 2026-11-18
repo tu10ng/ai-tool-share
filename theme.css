@@ -1,0 +1,66 @@
+/* @theme ai-share */
+
+@import 'default';
+
+section {
+  background:
+    radial-gradient(34em 10em at 12% -25%, rgba(142, 121, 196, .22), transparent 70%),
+    radial-gradient(30em 9em at 58% -40%, rgba(178, 142, 204, .18), transparent 70%),
+    radial-gradient(32em 10em at 94% -25%, rgba(116, 168, 203, .2), transparent 70%),
+    #fff;
+  color: #24212b;
+  font-family: system-ui, "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+  font-size: 26px;
+  line-height: 1.7;
+  padding: 0 60px 40px;
+  display: block;
+  place-content: start;
+}
+
+/* 标题条：顶格的紫罗兰到蓝灰渐变 */
+section h1 {
+  margin: 0 -60px .8em;
+  padding: .36em 60px;
+  border: 0;
+  font-size: 1.55em;
+  color: #fbfaff;
+  letter-spacing: .015em;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, .1), transparent 65%),
+    linear-gradient(112deg, rgba(92, 49, 151, .94), rgba(128, 68, 171, .9) 52%, rgba(87, 100, 162, .88));
+  text-shadow: 0 1px 2px rgba(20, 12, 39, .2);
+}
+section h1 strong { color: #fca5a5; }
+
+section h2 { font-size: 1.25em; color: #24212b; margin: 1em 0 .5em; border: 0; padding: 0; }
+section p { margin: .5em 0; }
+section strong { color: #b3334c; }
+section ul, section ol { padding-left: 1.6em; margin: .5em 0; }
+section li { margin: .25em 0; }
+section li::marker { color: #aa7ecf; }
+section li li::marker { color: #bea0d9; }
+
+section blockquote {
+  border-left: 2px solid #c3a4e1;
+  border-radius: 0 8px 8px 0;
+  padding: .3em 1.2em;
+  margin: .8em 0;
+  color: #686270;
+  background: linear-gradient(100deg, #f9f5fe, #fdfcfe);
+}
+
+section code {
+  font-size: .9em;
+  font-family: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  background: none;
+}
+section pre {
+  background: linear-gradient(135deg, #fdfcfe, #faf9fc);
+  border: 1px solid #e7e2ed;
+  border-radius: 8px;
+  padding: .4em .6em;
+}
+
+section a { color: #8550ad; }
+section img { border-radius: 8px; }
+section::after { color: #928998; font-size: 14px; }
