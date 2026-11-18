@@ -34,7 +34,7 @@ section h1 strong { color: #fca5a5; }
 
 section h2 { font-size: 1.25em; color: #24212b; margin: 1em 0 .5em; border: 0; padding: 0; }
 section p { margin: .5em 0; }
-section strong { color: #b3334c; }
+section strong, section h2 strong, section h3 strong { color: #b3334c; }
 section ul, section ol { padding-left: 1.6em; margin: .5em 0; }
 section li { margin: .25em 0; }
 section li::marker { color: #aa7ecf; }
