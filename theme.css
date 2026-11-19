@@ -144,6 +144,15 @@ section svg.diagram .old rect { fill: #ece8f1; stroke: none; }
 section svg.diagram .small-label { font-size: 16px; }
 section svg.diagram .result { font-size: 24px; font-weight: 700; }
 section svg.diagram path.more-arrow { stroke-dasharray: 6 6; }
+section svg.diagram .sub { font-size: 16px; }
+section svg.diagram .ai .sub { fill: #e4d9f2; }
+section svg.diagram .human-box rect { stroke: #686270; stroke-width: 2; }
+section svg.diagram .human-box text { font-weight: 700; }
+section svg.diagram .check polygon { fill: #f3ecfa; stroke: #aa7ecf; stroke-width: 2; }
+section svg.diagram .check text { fill: #8044ab; font-size: 18px; }
+section svg.diagram rect.frame { fill: none; stroke: #c3a4e1; stroke-dasharray: 6 5; }
+section svg.diagram path.vline { stroke: #c3a4e1; stroke-width: 1.5; stroke-dasharray: 4 4; }
+section svg.diagram path.moon { fill: #8044ab; stroke: none; }
 
 section a { color: #8550ad; }
 section img { border-radius: 8px; }

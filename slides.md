@@ -226,9 +226,51 @@ title: AI 工具的使用分享
 
 # 实际例子: 把流程节点一点点替换成 AI
 
+<svg class="diagram" viewBox="0 0 1160 470" width="1160" height="470">
+<defs>
+<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+</defs>
+<path class="bracket" d="M300 88V80H500V88"/><text class="label ai-note" x="400" y="56">编程 agent</text>
+<path class="bracket" d="M600 88V80H800V88"/><text class="label ai-note" x="700" y="56">验证 agent</text>
+<path class="flow" d="M202 150H298"/><path class="flow" d="M502 150H598"/><path class="flow" d="M802 150H898"/>
+<path class="flow" d="M1000 190C1000 270 100 270 100 192"/><text class="label" x="550" y="282">下一个节点</text>
+<g><rect x="0" y="112" width="200" height="76" rx="8"/><text x="100" y="150">人做的节点</text></g>
+<g class="doing"><rect x="300" y="112" width="200" height="76" rx="8"/><text x="400" y="139">喂上下文</text><text class="sub" x="400" y="166">先能做对</text></g>
+<g class="doing"><rect x="600" y="112" width="200" height="76" rx="8"/><text x="700" y="139">写成脚本</text><text class="sub" x="700" y="166">再能自证</text></g>
+<g class="ai"><rect x="900" y="112" width="200" height="76" rx="8"/><text x="1000" y="150">交给 AI</text></g>
+<g class="ai"><rect x="75" y="360" width="100" height="44" rx="6"/></g><path class="flow" d="M177 382H203"/>
+<g class="ai"><rect x="205" y="360" width="100" height="44" rx="6"/></g><path class="flow" d="M307 382H333"/>
+<g class="ai"><rect x="335" y="360" width="100" height="44" rx="6"/></g><path class="flow" d="M437 382H463"/>
+<g class="doing"><rect x="465" y="360" width="100" height="44" rx="6"/></g><path class="flow" d="M567 382H593"/>
+<g><rect x="595" y="360" width="100" height="44" rx="6"/></g><path class="flow" d="M697 382H723"/>
+<g><rect x="725" y="360" width="100" height="44" rx="6"/></g><path class="flow" d="M827 382H853"/>
+<g><rect x="855" y="360" width="100" height="44" rx="6"/></g><path class="flow" d="M957 382H983"/>
+<g><rect x="985" y="360" width="100" height="44" rx="6"/></g>
+<text class="label" x="580" y="442">一条流程上的节点，一个个换掉</text>
+</svg>
+
 ---
 
 # 实际例子: 让 AI 改写 aisbench
+
+<svg class="diagram" viewBox="0 0 1160 360" width="1160" height="360">
+<defs>
+<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+</defs>
+<text class="label note ai-note" x="230" y="96">测试脚本（AI 改写）</text>
+<rect class="frame" x="230" y="120" width="480" height="140" rx="12"/>
+<g><rect x="0" y="154" width="170" height="72" rx="8"/><text x="85" y="177">命令行参数</text><text class="sub" x="85" y="204">指定关键参数</text></g>
+<path class="flow" d="M172 190H258"/>
+<g class="ai"><rect x="260" y="154" width="180" height="72" rx="8"/><text x="350" y="190">运行 aisbench</text></g>
+<path class="flow" d="M442 190H498"/>
+<g class="ai"><rect x="500" y="154" width="180" height="72" rx="8"/><text x="590" y="177">提取数据</text><text class="sub" x="590" y="204">py 整合到脚本末尾</text></g>
+<path class="flow" d="M712 190H758"/>
+<g><rect x="760" y="154" width="180" height="72" rx="8"/><text x="850" y="177">固定输出</text><text class="sub" x="850" y="204">可直接获取</text></g>
+<path class="flow" d="M942 190H978"/>
+<g class="ai"><rect x="980" y="154" width="170" height="72" rx="8"/><text x="1065" y="190">AI 直接读取</text></g>
+</svg>
 
 ---
 
@@ -236,9 +278,51 @@ title: AI 工具的使用分享
 
 > 直接重启容器，别定位了，这样最干净；如果重启容器了仍然有 vllm 进程或者显存占用，就停下来找我做决定。
 
+<svg class="diagram" viewBox="0 0 1160 330" width="1160" height="330">
+<defs>
+<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+</defs>
+<g class="ai"><rect x="0" y="54" width="190" height="72" rx="8"/><text x="95" y="77">直接重启容器</text><text class="sub" x="95" y="104">别定位了</text></g>
+<path class="flow" d="M192 90H258"/>
+<g class="check"><polygon points="370,20 480,90 370,160 260,90"/><text x="370" y="78">仍有 vllm 进程</text><text x="370" y="104">或显存占用？</text></g>
+<path class="flow" d="M482 90H578"/><text class="label" x="530" y="68">没有</text>
+<g class="ai"><rect x="580" y="58" width="180" height="64" rx="8"/><text x="670" y="90">拉起 vllm</text></g>
+<path class="flow" d="M762 90H838"/>
+<g class="ai"><rect x="840" y="58" width="180" height="64" rx="8"/><text x="930" y="90">测试</text></g>
+<path class="flow" d="M370 162V238"/><text class="label note" x="386" y="200">有</text>
+<g class="human-box"><rect x="260" y="240" width="220" height="64" rx="8"/><text x="370" y="272">停下来找我做决定</text></g>
+<text class="label note human-note" x="500" y="272">决策留给人</text>
+</svg>
+
 ---
 
 # 实际例子: 让 AI 负责全套夜航流程
+
+<svg class="diagram" viewBox="0 0 1160 400" width="1160" height="400">
+<defs>
+<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+</defs>
+<path class="moon" d="M488 95A13 13 0 0 0 488 121A7 13 0 0 1 488 95Z"/><text class="label ai-note" x="588" y="108">夜里 AI 自己跑完</text>
+<path class="bracket" d="M141 148V140H1015V148"/>
+<text class="label human-note" x="55" y="140">人</text><text class="label human-note" x="1101" y="140">人</text>
+<g class="human-box small"><rect x="0" y="168" width="110" height="64" rx="8"/><text x="55" y="200">下班</text></g>
+<path class="flow" d="M112 200H139"/>
+<g class="ai small"><rect x="141" y="168" width="150" height="64" rx="8"/><text x="216" y="200">代理配置</text></g>
+<path class="flow" d="M293 200H320"/>
+<g class="ai small"><rect x="322" y="168" width="150" height="64" rx="8"/><text x="397" y="200">容器拉取</text></g>
+<path class="flow" d="M474 200H501"/>
+<g class="ai small"><rect x="503" y="168" width="150" height="64" rx="8"/><text x="578" y="200">scp 和 sshpass</text></g>
+<path class="flow" d="M655 200H682"/>
+<g class="ai small"><rect x="684" y="168" width="150" height="64" rx="8"/><text x="759" y="200">拉起 vllm</text></g>
+<path class="flow" d="M836 200H863"/>
+<g class="ai small"><rect x="865" y="168" width="150" height="64" rx="8"/><text x="940" y="200">aisbench 测试</text></g>
+<path class="flow" d="M1017 200H1044"/>
+<g class="human-box small"><rect x="1046" y="168" width="110" height="64" rx="8"/><text x="1101" y="200">看结果</text></g>
+<path class="vline" d="M216 234V300"/><path class="vline" d="M397 234V300"/><path class="vline" d="M578 234V300"/><path class="vline" d="M759 234V300"/><path class="vline" d="M940 234V300"/>
+<g class="doing"><rect x="141" y="300" width="874" height="56" rx="8"/><text x="578" y="328">claude.md</text></g>
+</svg>
 
 ---
 
