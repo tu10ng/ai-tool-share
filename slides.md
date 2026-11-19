@@ -326,6 +326,75 @@ title: AI 工具的使用分享
 
 ---
 
+# 实际例子: 让 AI 帮忙检视代码
+
+人类要关注：**侵入式修改**，没有最小化改动，不利于长期演进；可能要人类来识别出来
+
+<svg class="diagram" viewBox="0 0 1160 420" width="1160" height="420">
+<defs>
+<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<clipPath id="venn-community"><circle cx="170" cy="210" r="140"/></clipPath>
+</defs>
+<circle class="community" cx="170" cy="210" r="140"/>
+<circle class="mine" cx="340" cy="210" r="140"/>
+<circle class="overlap" cx="340" cy="210" r="140" clip-path="url(#venn-community)"/>
+<text x="105" y="210">社区代码</text>
+<text class="ai-note" x="410" y="210">AI 的修改</text>
+<text class="hit-note result" x="255" y="210">交集</text>
+<text class="label" x="880" y="14">人类的识别方法</text>
+<g class="ai"><rect x="620" y="40" width="520" height="72" rx="8"/><text x="880" y="76">① AI 把和社区有交集的地方全部整理出来</text></g>
+<path class="flow" d="M880 114V168"/>
+<g class="ai"><rect x="620" y="170" width="520" height="72" rx="8"/><text x="880" y="206">② AI 讲背景</text></g>
+<path class="flow" d="M880 244V298"/>
+<g class="human-box"><rect x="620" y="300" width="520" height="72" rx="8"/><text x="880" y="323">③ 人类来过一遍</text><text class="sub" x="880" y="352">识别侵入式修改</text></g>
+</svg>
+
+---
+
+# 实际例子: 让 AI 分析方案
+
+<svg class="diagram" viewBox="0 0 1160 450" width="1160" height="450">
+<defs>
+<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+</defs>
+<path class="flow" d="M342 100H408"/><path class="flow" d="M752 100H818"/>
+<path class="flow" d="M990 162V211H170V258"/>
+<path class="flow" d="M342 320H408"/><path class="flow" d="M752 320H818"/>
+<g class="ai"><rect x="0" y="40" width="340" height="120" rx="8"/><text x="170" y="84">① AI 理解需求</text><text class="sub" x="170" y="118">拿到需求先让 AI 理解</text></g>
+<g class="human-box"><rect x="410" y="40" width="340" height="120" rx="8"/><text x="580" y="76">② 找专家串讲</text><text class="sub" x="580" y="110">拿着你的理解和 AI 的输出</text><text class="sub" x="580" y="136">串讲视频录下来，让 AI 把视频转语音</text></g>
+<g class="doing"><rect x="820" y="40" width="340" height="120" rx="8"/><text x="990" y="76">③ 调整 AI 的理解</text><text class="sub" x="990" y="110">串讲会议的全部内容输入给 AI</text><text class="sub" x="990" y="136">人作为中转站</text></g>
+<g class="ai"><rect x="0" y="260" width="340" height="120" rx="8"/><text x="170" y="296">④ 编码，上环境测试</text><text class="sub" x="170" y="330">需求确认以后再编码</text><text class="sub" x="170" y="356">上环境测试并解决问题</text></g>
+<g class="doing"><rect x="410" y="260" width="340" height="120" rx="8"/><text x="580" y="296">⑤ AI 带你串讲代码</text><text class="sub" x="580" y="330">一个一个 diff 全部理解</text><text class="sub" x="580" y="356">一般要一到两天</text></g>
+<g class="human-box"><rect x="820" y="260" width="340" height="120" rx="8"/><text x="990" y="296">⑥ 找专家反串讲</text><text class="sub" x="990" y="330">拿着你的理解（不要带 AI 的输出）</text><text class="sub" x="990" y="356">落实成你自己的理解</text></g>
+<g class="ai"><rect x="330" y="415" width="28" height="20" rx="4"/></g><text class="label note" x="368" y="425">AI 做</text>
+<g class="doing"><rect x="480" y="415" width="28" height="20" rx="4"/></g><text class="label note" x="518" y="425">人和 AI 一起</text>
+<g class="human-box"><rect x="680" y="415" width="28" height="20" rx="4"/></g><text class="label note" x="718" y="425">人找专家</text>
+</svg>
+
+---
+
+# 实际例子: 定位问题参考流程
+
+<svg class="diagram" viewBox="0 0 1160 340" width="1160" height="340">
+<defs>
+<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+</defs>
+<g><rect x="0" y="144" width="150" height="72" rx="8"/><text x="75" y="180">日志</text></g>
+<path class="flow" d="M152 180H338"/><text class="label" x="245" y="156">400 行日志传输</text>
+<g class="ai"><rect x="340" y="144" width="260" height="72" rx="8"/><text x="470" y="180">① ds 的官方对话网站</text></g>
+<path class="flow" d="M602 180H668"/>
+<g><rect x="670" y="140" width="270" height="80" rx="8"/><text x="805" y="166">② github 开一个 issue</text><text class="sub" x="805" y="198">记录定位过程</text></g>
+<path class="flow" d="M942 180C965 180 965 110 988 110"/><path class="flow" d="M942 180C965 180 965 250 988 250"/>
+<g><rect x="990" y="82" width="160" height="56" rx="8"/><text x="1070" y="110">后续查找</text></g>
+<g><rect x="990" y="222" width="160" height="56" rx="8"/><text x="1070" y="250">分享</text></g>
+<text class="label" x="805" y="250">比如 dsv41 的定位 issue</text>
+</svg>
+
+---
+
 # 当真的都交给 AI
 
 ## 回到 aisbench
