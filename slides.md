@@ -18,10 +18,10 @@ title: AI 工具的使用分享
 
 # AI：执行力极强的新同事
 
-<svg class="diagram" viewBox="0 0 1160 500" width="1160" height="500">
+<svg class="diagram" style="--ai-fill:url(#d1-ai);--ai-arrow:url(#d1-arrow);--flow-arrow:url(#d1-flow)" viewBox="0 0 1160 500" width="1160" height="500">
 <defs>
-<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
-<marker id="diagram-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<linearGradient id="d1-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="d1-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
 </defs>
 <path class="ai" d="M190 270C240 270 240 110 288 110"/><path d="M190 270H290"/><path d="M190 270C240 270 240 430 290 430"/>
 <path class="ai" d="M520 110C565 110 565 60 608 60"/><path d="M520 110C565 110 565 160 610 160"/>
@@ -49,10 +49,10 @@ title: AI 工具的使用分享
 
 # 逐步把任务流程节点交给 AI
 
-<svg class="diagram" viewBox="0 0 1160 545" width="1160" height="545">
+<svg class="diagram" style="--ai-fill:url(#d2-ai);--ai-arrow:url(#d2-arrow);--flow-arrow:url(#d2-flow)" viewBox="0 0 1160 545" width="1160" height="545">
 <defs>
-<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
-<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<linearGradient id="d2-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="d2-flow" class="flow-head" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
 </defs>
 <g transform="translate(60 0)">
 <path class="bracket" d="M0 112V104H350V112"/><text class="label ai-note" x="175" y="80">已交给 AI</text>
@@ -77,10 +77,10 @@ title: AI 工具的使用分享
 
 把编码交给 AI：上下文影响智力，提示词影响方向；决策留给人。
 
-<svg class="diagram" viewBox="0 0 1160 350" width="1160" height="350">
+<svg class="diagram" style="--ai-fill:url(#d3-ai);--ai-arrow:url(#d3-arrow);--flow-arrow:url(#d3-flow)" viewBox="0 0 1160 350" width="1160" height="350">
 <defs>
-<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
-<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<linearGradient id="d3-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="d3-flow" class="flow-head" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
 </defs>
 <path class="bracket" d="M0 100V92H140V100"/><text class="label ai-note" x="70" y="68">能替换成 AI</text>
 <path class="bracket" d="M180 100V92H500V100"/><text class="label ai-note" x="340" y="68">一次做不对，要人给上下文</text>
@@ -100,11 +100,11 @@ title: AI 工具的使用分享
 
 # 编程 Agent: 上下文影响智力
 
-<svg class="diagram" viewBox="0 0 1160 550" width="1160" height="550">
+<svg class="diagram" style="--ai-fill:url(#d4-ai);--ai-arrow:url(#d4-arrow);--flow-arrow:url(#d4-flow)" viewBox="0 0 1160 550" width="1160" height="550">
 <defs>
-<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
-<marker id="diagram-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
-<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<linearGradient id="d4-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="d4-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<marker id="d4-flow" class="flow-head" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
 </defs>
 <text class="note" x="0" y="40">上下文用到 50%</text>
 <rect x="190" y="18" width="360" height="44" rx="6"/><g class="ai"><rect x="190" y="18" width="180" height="44" rx="6"/></g>
@@ -195,10 +195,10 @@ title: AI 工具的使用分享
 
 叮嘱写在对话里会被稀释：把验证过程的经验总结下来，写到它每次都看得见的地方
 
-<svg class="diagram" viewBox="0 0 1160 370" width="1160" height="370">
+<svg class="diagram" style="--ai-fill:url(#d5-ai);--ai-arrow:url(#d5-arrow);--flow-arrow:url(#d5-flow)" viewBox="0 0 1160 370" width="1160" height="370">
 <defs>
-<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
-<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<linearGradient id="d5-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="d5-flow" class="flow-head" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
 </defs>
 <path class="flow" d="M232 110H308"/><path class="flow" d="M542 110H618"/><path class="flow" d="M852 110H928"/>
 <path class="flow" d="M1045 152C1045 250 115 250 115 152"/><text class="label" x="580" y="264">每次被纠正，就更新一次</text>
@@ -240,10 +240,10 @@ title: AI 工具的使用分享
 
 # 实际例子: 把流程节点一点点替换成 AI
 
-<svg class="diagram" viewBox="0 0 1160 470" width="1160" height="470">
+<svg class="diagram" style="--ai-fill:url(#d6-ai);--ai-arrow:url(#d6-arrow);--flow-arrow:url(#d6-flow)" viewBox="0 0 1160 470" width="1160" height="470">
 <defs>
-<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
-<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<linearGradient id="d6-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="d6-flow" class="flow-head" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
 </defs>
 <path class="bracket" d="M300 88V80H500V88"/><text class="label ai-note" x="400" y="56">编程 agent</text>
 <path class="bracket" d="M600 88V80H800V88"/><text class="label ai-note" x="700" y="56">验证 agent</text>
@@ -268,10 +268,10 @@ title: AI 工具的使用分享
 
 # 实际例子: 让 AI 改写 aisbench
 
-<svg class="diagram" viewBox="0 0 1160 360" width="1160" height="360">
+<svg class="diagram" style="--ai-fill:url(#d7-ai);--ai-arrow:url(#d7-arrow);--flow-arrow:url(#d7-flow)" viewBox="0 0 1160 360" width="1160" height="360">
 <defs>
-<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
-<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<linearGradient id="d7-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="d7-flow" class="flow-head" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
 </defs>
 <text class="label note ai-note" x="230" y="96">测试脚本（AI 改写）</text>
 <rect class="frame" x="230" y="120" width="480" height="140" rx="12"/>
@@ -292,10 +292,10 @@ title: AI 工具的使用分享
 
 > 直接重启容器，别定位了，这样最干净；如果重启容器了仍然有 vllm 进程或者显存占用，就停下来找我做决定。
 
-<svg class="diagram" viewBox="0 0 1160 330" width="1160" height="330">
+<svg class="diagram" style="--ai-fill:url(#d8-ai);--ai-arrow:url(#d8-arrow);--flow-arrow:url(#d8-flow)" viewBox="0 0 1160 330" width="1160" height="330">
 <defs>
-<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
-<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<linearGradient id="d8-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="d8-flow" class="flow-head" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
 </defs>
 <g class="ai"><rect x="0" y="54" width="190" height="72" rx="8"/><text x="95" y="77">直接重启容器</text><text class="sub" x="95" y="104">别定位了</text></g>
 <path class="flow" d="M192 90H258"/>
@@ -313,10 +313,10 @@ title: AI 工具的使用分享
 
 # 实际例子: 让 AI 负责全套夜航流程
 
-<svg class="diagram" viewBox="0 0 1160 400" width="1160" height="400">
+<svg class="diagram" style="--ai-fill:url(#d9-ai);--ai-arrow:url(#d9-arrow);--flow-arrow:url(#d9-flow)" viewBox="0 0 1160 400" width="1160" height="400">
 <defs>
-<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
-<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<linearGradient id="d9-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="d9-flow" class="flow-head" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
 </defs>
 <path class="moon" d="M488 95A13 13 0 0 0 488 121A7 13 0 0 1 488 95Z"/><text class="label ai-note" x="588" y="108">夜里 AI 自己跑完</text>
 <path class="bracket" d="M141 148V140H1015V148"/>
@@ -344,15 +344,15 @@ title: AI 工具的使用分享
 
 人类要关注：**侵入式修改**，没有最小化改动，不利于长期演进；可能要人类来识别出来
 
-<svg class="diagram" viewBox="0 0 1160 420" width="1160" height="420">
+<svg class="diagram" style="--ai-fill:url(#d10-ai);--ai-arrow:url(#d10-arrow);--flow-arrow:url(#d10-flow)" viewBox="0 0 1160 420" width="1160" height="420">
 <defs>
-<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
-<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
-<clipPath id="venn-community"><circle cx="170" cy="210" r="140"/></clipPath>
+<linearGradient id="d10-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="d10-flow" class="flow-head" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<clipPath id="d10-venn"><circle cx="170" cy="210" r="140"/></clipPath>
 </defs>
 <circle class="community" cx="170" cy="210" r="140"/>
 <circle class="mine" cx="340" cy="210" r="140"/>
-<circle class="overlap" cx="340" cy="210" r="140" clip-path="url(#venn-community)"/>
+<circle class="overlap" cx="340" cy="210" r="140" clip-path="url(#d10-venn)"/>
 <text x="105" y="210">社区代码</text>
 <text class="ai-note" x="410" y="210">AI 的修改</text>
 <text class="hit-note result" x="255" y="210">交集</text>
@@ -368,10 +368,10 @@ title: AI 工具的使用分享
 
 # 实际例子: 让 AI 分析方案
 
-<svg class="diagram" viewBox="0 0 1160 450" width="1160" height="450">
+<svg class="diagram" style="--ai-fill:url(#d11-ai);--ai-arrow:url(#d11-arrow);--flow-arrow:url(#d11-flow)" viewBox="0 0 1160 450" width="1160" height="450">
 <defs>
-<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
-<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<linearGradient id="d11-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="d11-flow" class="flow-head" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
 </defs>
 <path class="flow" d="M342 100H408"/><path class="flow" d="M752 100H818"/>
 <path class="flow" d="M990 162V211H170V258"/>
@@ -391,10 +391,10 @@ title: AI 工具的使用分享
 
 # 实际例子: 定位问题参考流程
 
-<svg class="diagram" viewBox="0 0 1160 340" width="1160" height="340">
+<svg class="diagram" style="--ai-fill:url(#d12-ai);--ai-arrow:url(#d12-arrow);--flow-arrow:url(#d12-flow)" viewBox="0 0 1160 340" width="1160" height="340">
 <defs>
-<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
-<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+<linearGradient id="d12-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="d12-flow" class="flow-head" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
 </defs>
 <g><rect x="0" y="144" width="150" height="72" rx="8"/><text x="75" y="180">日志</text></g>
 <path class="flow" d="M152 180H338"/><text class="label" x="245" y="156">400 行日志传输</text>
