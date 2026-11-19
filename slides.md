@@ -435,5 +435,6 @@ title: AI 工具的使用分享
 ## 要不要开发专门的软件？
 
 - dsh、todo 工作树
+- code-notify 等 agent 通知插件
 
 回去挑一个自己的重复流程，转成 AI 操作。
