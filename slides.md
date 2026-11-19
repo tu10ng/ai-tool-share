@@ -191,19 +191,33 @@ title: AI 工具的使用分享
 
 ---
 
-# 验证 Agent: skill 和 markdown
+# 验证 Agent: 用 CLAUDE.md 和记忆持久维护
 
-## 叮嘱写在对话里会被稀释
+叮嘱写在对话里会被稀释：把验证过程的经验总结下来，写到它每次都看得见的地方
 
-- 把验证过程的经验总结下来
-- 写到它每次都看得见的地方
+<svg class="diagram" viewBox="0 0 1160 370" width="1160" height="370">
+<defs>
+<linearGradient id="diagram-ai" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="#5c3197" stop-opacity=".94"/><stop offset=".52" stop-color="#8044ab" stop-opacity=".9"/><stop offset="1" stop-color="#5764a2" stop-opacity=".88"/></linearGradient>
+<marker id="diagram-flow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+</defs>
+<path class="flow" d="M232 110H308"/><path class="flow" d="M542 110H618"/><path class="flow" d="M852 110H928"/>
+<path class="flow" d="M1045 152C1045 250 115 250 115 152"/><text class="label" x="580" y="264">每次被纠正，就更新一次</text>
+<g class="ai"><rect x="0" y="70" width="230" height="80" rx="8"/><text x="115" y="110">会话</text></g>
+<g class="human-box"><rect x="310" y="70" width="230" height="80" rx="8"/><text x="425" y="110">被纠正、踩坑</text></g>
+<g class="doing"><rect x="620" y="70" width="230" height="80" rx="8"/><text x="735" y="97">写进 CLAUDE.md</text><text class="sub" x="735" y="126">和记忆文件</text></g>
+<g class="ai"><rect x="930" y="70" width="230" height="80" rx="8"/><text x="1045" y="110">下次会话自动带上</text></g>
+<text class="caption" x="580" y="335">记忆文件不是写一次就完，要<tspan class="hit-note" font-weight="700">持续维护</tspan></text>
+</svg>
 
-## skill 是个假大空的概念
+例子：我的验证用 CLAUDE.md
+
+---
+
+# 验证 Agent: skill 是个假大空的概念
 
 - 落地就是一份 markdown
 - 与其追概念，不如直接写 markdown：最简洁快速
 - 这就是**规范化**
-- 我的验证用 CLAUDE.md
 
 ---
 
